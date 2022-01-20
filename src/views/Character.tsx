@@ -3,11 +3,15 @@ import { useQuery, gql } from "@apollo/client";
 import { Characters } from "../types";
 import ViewBanner from "../components/ViewBanner";
 import Personajes from "../img/personajes.jpg";
-
+import SmithFamily from "../components/characters/SmithFamily";
+import AllCharacters from "../components/characters/AllCharacters";
 const Character = () => {
   return (
     <>
-      <ViewBanner img={"../img/personajes.jpg"} text={"Personajes"} />
+      <ViewBanner img={"personajes"} text={"Personajes"} />
+      <SmithFamily />
+
+      <AllCharacters />
     </>
   );
 };

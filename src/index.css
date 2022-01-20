@@ -93,9 +93,73 @@
 /*
   Component: ViewBanner
 */
-
-.view-banner {
+.view-banner-container {
   margin-top: 150px;
+}
+.view-banner {
   width: 90%;
-  height: 300px;
+  height: 50vh;
+  margin: auto;
+  border-radius: 30px;
+  background-size: cover;
+}
+.view-banner-text {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+}
+.characters {
+  background-image: url("../src/img/personajes.jpg");
+}
+.episodes {
+  background-image: url("../src/img/personajes.jpg");
+}
+
+/*
+  Component: MainCard
+*/
+
+.top-text {
+  font-size: 24px;
+}
+
+.main-card {
+  background-color: #fafafa !important;
+}
+.main-card-image {
+  width: 90%;
+  margin: auto;
+}
+.main-card-text {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 30px;
+}
+.main-card:hover {
+  border-color: #70d026;
+  cursor: pointer;
+}
+.character-card {
+  display: flex !important;
+  background-color: #fafafa !important;
+  flex-direction: row !important;
+}
+.character-card:hover {
+  border-color: #70d026;
+  cursor: pointer;
+}
+.character-card-image {
+  border-radius: 100%;
+  height: 75px;
+}
+.character-text {
+  font-size: 18px;
+  line-height: normal;
+  vertical-align: middle;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .view-banner {
+    background-position: center;
+  }
 }
