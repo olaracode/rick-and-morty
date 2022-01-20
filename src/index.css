@@ -158,6 +158,13 @@
   vertical-align: middle;
   margin: 0;
 }
+.pagination-button {
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 10px;
+}
 @media (max-width: 480px) {
   .view-banner {
     background-position: center;

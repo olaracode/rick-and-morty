@@ -22,8 +22,8 @@ export type MainCardProps = {
   id: number;
 };
 
-export interface CardCharacter {
+export type CardCharacter = {
   name: "string";
   image: "string";
   id: "number";
-}
+};
