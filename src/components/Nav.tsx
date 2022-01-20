@@ -22,8 +22,22 @@ const DesktopNav = ({ location, navigate }: AppsProps) => (
       />
     </div>
     <div className="px-5 py-3 d-flex justify-content-between">
-      <p className="px-5 nav-links">Personajes</p>
-      <p className="px-5 nav-links">Episodios</p>
+      <p
+        className="px-5 m-0 nav-links"
+        onClick={() => {
+          navigate("/characters", { replace: true });
+        }}
+      >
+        Personajes
+      </p>
+      <p
+        className="px-5 m-0 nav-links"
+        onClick={() => {
+          navigate("/episodes", { replace: true });
+        }}
+      >
+        Episodios
+      </p>
     </div>
   </div>
 );
@@ -53,7 +67,7 @@ const Nav = () => {
   let location = useLocation();
   let navigate = useNavigate();
   let currentLocation = location.pathname;
-  console.log(currentLocation);
+
   let width = window.innerWidth;
   let isDesktop: boolean = width > 480 ? true : false;
   return isDesktop ? (

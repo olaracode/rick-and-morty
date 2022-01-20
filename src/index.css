@@ -18,6 +18,12 @@
 .nav-links {
   font-size: 28px;
   font-family: "Roboto";
+  margin: 0;
+  vertical-align: middle;
+}
+.nav-links:hover {
+  cursor: pointer;
+  color: #70d026;
 }
 
 /*
@@ -112,7 +118,7 @@
   background-image: url("../src/img/personajes.jpg");
 }
 .episodes {
-  background-image: url("../src/img/personajes.jpg");
+  background-image: url("../src/img/episodios.jpg");
 }
 
 /*
@@ -164,6 +170,23 @@
   border-radius: 8px;
   border: none;
   margin: 0 10px;
+}
+
+.episode {
+  color: #9e9e9e;
+}
+.episode-card:hover {
+  border-color: #70d026;
+  cursor: pointer;
+}
+
+.detail {
+  margin-top: 150px;
+  width: 90%;
+}
+.card-detail {
+  background-color: #fafafa !important;
+  flex-direction: row !important;
 }
 @media (max-width: 480px) {
   .view-banner {

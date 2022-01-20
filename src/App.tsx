@@ -12,6 +12,8 @@ import {
 import Home from "./views/Home";
 import Nav from "./components/Nav";
 import Character from "./views/Character";
+import Episodes from "./views/Episodes";
+import Details from "./views/Details";
 
 const client = new ApolloClient({
   uri: "https://rickandmortyapi.com/graphql",
@@ -27,6 +29,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/characters" element={<Character />} />
+            <Route path="/episodes" element={<Episodes />} />
+            <Route path="/character/:id" element={<Details />} />
           </Routes>
         </Router>
       </div>

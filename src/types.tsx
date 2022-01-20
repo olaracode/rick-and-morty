@@ -27,3 +27,11 @@ export type CardCharacter = {
   image: "string";
   id: "number";
 };
+
+export type EpisodeProps = {
+  name: "string";
+  episode: "string";
+};
+export type DetailProps = {
+  id: string;
+};

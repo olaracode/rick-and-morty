@@ -10,7 +10,7 @@ const Choice = () => {
       <div className="row jusitfy-content-between m-auto">
         <div
           className="col-lg-6 col-xs-12 m-auto p-5"
-          onClick={() => navigate("/characters", { replace: true })}
+          onClick={() => navigate("/episodes", { replace: true })}
         >
           <img
             src={Episodes}
@@ -25,7 +25,10 @@ const Choice = () => {
             </p>
           </div>
         </div>
-        <div className="col-lg-6 col-xs-12 m-auto p-5">
+        <div
+          className="col-lg-6 col-xs-12 m-auto p-5"
+          onClick={() => navigate("/characters", { replace: true })}
+        >
           <img
             src={Characters}
             alt=""

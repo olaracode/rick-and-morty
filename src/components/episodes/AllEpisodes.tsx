@@ -1,16 +1,14 @@
 import React, { useState } from "react";
+import EpisodeCard from "./EpisodeCard";
 import { useQuery, gql } from "@apollo/client";
-import { CardCharacter } from "../../types";
-import CharacterCard from "./CharacterCard";
+import { EpisodeProps } from "../../types";
 import { RevolvingDot } from "react-loader-spinner";
 
-const GET_CHARACTER = (page: number) => gql`
-  query getCharacter {
-    characters (page: ${page}){
+const GET_EPISODES = (page: number) => gql`
+  query getEpisodes {
+    episodes (page: ${page}){
       results {
-        name
-        image
-        id
+        name, episode, id
       },
       info {
         pages
@@ -19,38 +17,24 @@ const GET_CHARACTER = (page: number) => gql`
   }
 `;
 
-/*
-
-  */
-
-const AllCharacters = () => {
+const AllEpisodes = () => {
   let [currentPage, setCurrentPage] = useState<number>(1);
-  const { loading, error, data } = useQuery(GET_CHARACTER(currentPage));
-  let smithFamily = [1, 2, 3, 4, 5, 6];
+
+  const { loading, error, data } = useQuery(GET_EPISODES(currentPage));
   return (
-    <>
+    <div className="row m-auto p-5">
       {loading ? (
         <div className="d-flex align-items-center justify-content-center py-5">
           <RevolvingDot color={"#70d026"} width={100} height={100} />
         </div>
       ) : (
         <>
-          <div className="row m-auto p-5">
-            {data.characters.results.map((character: CardCharacter) => {
-              if (character.id in smithFamily) {
-                return null;
-              } else {
-                return (
-                  <CharacterCard
-                    name={character.name}
-                    image={character.image}
-                    id={character.id}
-                  />
-                );
-              }
-            })}
-          </div>
-          <div className="pb-5 d-flex justify-content-center">
+          {data.episodes.results.map((episode: EpisodeProps) => {
+            return (
+              <EpisodeCard name={episode.name} episode={episode.episode} />
+            );
+          })}
+          <div className="py-5 d-flex justify-content-center">
             {currentPage === 1 ? (
               <button className="pagination-button" disabled>
                 Prev
@@ -64,7 +48,7 @@ const AllCharacters = () => {
               </button>
             )}
             <p style={{ verticalAlign: "middle" }}>{currentPage}</p>
-            {currentPage === data.characters.info.pages ? (
+            {currentPage === data.episodes.info.pages ? (
               <button disabled className="pagination-button">
                 Next
               </button>
@@ -79,8 +63,8 @@ const AllCharacters = () => {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 };
 
-export default AllCharacters;
+export default AllEpisodes;
