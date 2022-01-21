@@ -23,7 +23,7 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const basename = process.env.BASENAME || "";
+  const basename = process.env.BASENAME || "rick-and-morty";
   return (
     <ApolloProvider client={client}>
       <div className="App">
