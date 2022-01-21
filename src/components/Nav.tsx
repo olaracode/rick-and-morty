@@ -17,7 +17,7 @@ const DesktopNav = ({ location, navigate }: AppsProps) => (
         alt=""
         className="logo"
         onClick={() => {
-          navigate("/", { replace: true });
+          navigate("/rick-and-morty", { replace: true });
         }}
       />
     </div>
@@ -45,7 +45,7 @@ const MobileNav = ({ location, navigate }: AppsProps) => (
   <div
     className="w-100 d-flex justify-content-center p-0 position-absolute"
     style={
-      location === "/"
+      location === "/rick-and-morty"
         ? { color: "white" }
         : { color: "black", backgroundColor: "#fafafa" }
     }
@@ -56,7 +56,7 @@ const MobileNav = ({ location, navigate }: AppsProps) => (
         alt=""
         className="logo"
         onClick={() => {
-          navigate("/", { replace: true });
+          navigate("/rick-and-morty", { replace: true });
         }}
       />
     </div>
