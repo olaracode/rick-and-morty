@@ -23,10 +23,11 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const basename = process.env.BASENAME || "";
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <Router>
+        <Router basename={basename}>
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
