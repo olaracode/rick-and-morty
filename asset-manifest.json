@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9002ee71.css",
-    "main.js": "/static/js/main.2fdd8982.js",
+    "main.js": "/static/js/main.3440a9fa.js",
     "static/media/episodes.png": "/static/media/episodes.61e1cf6c4ba77ab3576b.png",
     "static/media/back.jpg": "/static/media/back.2b58588186bc0a7d4ae3.jpg",
     "static/media/personajes.jpg": "/static/media/personajes.2c043f87ae4a61354b60.jpg",
@@ -17,10 +17,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.9002ee71.css.map": "/static/css/main.9002ee71.css.map",
-    "main.2fdd8982.js.map": "/static/js/main.2fdd8982.js.map"
+    "main.3440a9fa.js.map": "/static/js/main.3440a9fa.js.map"
   },
   "entrypoints": [
     "static/css/main.9002ee71.css",
-    "static/js/main.2fdd8982.js"
+    "static/js/main.3440a9fa.js"
   ]
 }
