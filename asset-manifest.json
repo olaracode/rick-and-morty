@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/rick-and-morty/static/css/main.b44eeeb7.css",
-    "main.js": "/rick-and-morty/static/js/main.2d7d64da.js",
-    "static/media/episodes.png": "/rick-and-morty/static/media/episodes.61e1cf6c4ba77ab3576b.png",
-    "static/media/back.jpg": "/rick-and-morty/static/media/back.2b58588186bc0a7d4ae3.jpg",
-    "static/media/personajes.jpg": "/rick-and-morty/static/media/personajes.2c043f87ae4a61354b60.jpg",
-    "static/media/portal.png": "/rick-and-morty/static/media/portal.80a4115cabe1078ba768.png",
-    "static/media/epis.jpg": "/rick-and-morty/static/media/epis.6f9bfd0cdd5cf3a07ee1.jpg",
-    "static/media/logo.png": "/rick-and-morty/static/media/logo.de13d48466d780cbf10c.png",
-    "static/media/episodios.jpg": "/rick-and-morty/static/media/episodios.0b46b6e475010b769351.jpg",
-    "static/media/search.png": "/rick-and-morty/static/media/search.df82d1f9bce622b4a3de.png",
-    "static/media/404a.png": "/rick-and-morty/static/media/404a.9e82bceec9366e00f8dc.png",
-    "static/media/slick.svg": "/rick-and-morty/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/rick-and-morty/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/rick-and-morty/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/rick-and-morty/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/rick-and-morty/index.html",
-    "main.b44eeeb7.css.map": "/rick-and-morty/static/css/main.b44eeeb7.css.map",
-    "main.2d7d64da.js.map": "/rick-and-morty/static/js/main.2d7d64da.js.map"
+    "main.css": "/static/css/main.9002ee71.css",
+    "main.js": "/static/js/main.2fdd8982.js",
+    "static/media/episodes.png": "/static/media/episodes.61e1cf6c4ba77ab3576b.png",
+    "static/media/back.jpg": "/static/media/back.2b58588186bc0a7d4ae3.jpg",
+    "static/media/personajes.jpg": "/static/media/personajes.2c043f87ae4a61354b60.jpg",
+    "static/media/portal.png": "/static/media/portal.80a4115cabe1078ba768.png",
+    "static/media/epis.jpg": "/static/media/epis.6f9bfd0cdd5cf3a07ee1.jpg",
+    "static/media/logo.png": "/static/media/logo.de13d48466d780cbf10c.png",
+    "static/media/episodios.jpg": "/static/media/episodios.0b46b6e475010b769351.jpg",
+    "static/media/search.png": "/static/media/search.df82d1f9bce622b4a3de.png",
+    "static/media/404a.png": "/static/media/404a.9e82bceec9366e00f8dc.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.9002ee71.css.map": "/static/css/main.9002ee71.css.map",
+    "main.2fdd8982.js.map": "/static/js/main.2fdd8982.js.map"
   },
   "entrypoints": [
-    "static/css/main.b44eeeb7.css",
-    "static/js/main.2d7d64da.js"
+    "static/css/main.9002ee71.css",
+    "static/js/main.2fdd8982.js"
   ]
 }
