@@ -52,6 +52,7 @@ const DetailCard = () => {
         </p>
         <SearchBar />
       </div>
+      <p className="py-5 text-center">Episodios protagonizados</p>
       {loading ? (
         <div className="d-flex align-items-center justify-content-center py-5">
           <RevolvingDot color={"#70d026"} width={100} height={100} />
