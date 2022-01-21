@@ -23,14 +23,14 @@ const client = new ApolloClient({
 });
 
 function App() {
-  const basename = process.env.BASENAME || "/rick-and-morty";
+  const basename = process.env.BASENAME || "/";
   return (
     <ApolloProvider client={client}>
       <div className="App">
         <Router basename={basename}>
           <Nav />
           <Routes>
-            <Route path="/rick-and-morty" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/characters" element={<Character />} />
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/episode/:id" element={<EpisodeDetail />} />
