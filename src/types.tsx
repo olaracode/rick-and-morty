@@ -23,14 +23,15 @@ export type MainCardProps = {
 };
 
 export type CardCharacter = {
-  name: "string";
-  image: "string";
-  id: "number";
+  name: string;
+  image: string;
+  id: number;
 };
 
 export type EpisodeProps = {
-  name: "string";
-  episode: "string";
+  id: number;
+  name: string;
+  episode: string;
 };
 export type DetailProps = {
   id: string;

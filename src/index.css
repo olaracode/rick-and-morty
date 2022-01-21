@@ -5,6 +5,38 @@
 }
 
 /*
+  Component: SearchBar
+*/
+.search-bar-container {
+  height: 100px;
+  overflow: hidden;
+}
+.search-bar {
+  background-color: #fafafa;
+  width: 90%;
+  height: 60px;
+  border-radius: 100px;
+  margin: auto;
+  display: flex;
+  box-shadow: 5px 5px 10px 5px #ebebeb;
+  overflow: hidden;
+}
+.portal {
+  transition: all 2s ease-in;
+}
+.portal:hover {
+  cursor: pointer;
+  transform: rotate(1000deg);
+}
+.search-bar-input {
+  width: 90% !important;
+  height: 60px;
+  border-radius: 100px;
+  padding: 15px;
+  border: 0;
+  background-color: #fafafa;
+}
+/*
   Component: Nav
 */
 .logo {
@@ -62,6 +94,10 @@
   opacity: 90%;
   font-family: "Roboto";
   box-shadow: 5px 5px 15px 5px #252525;
+  transition: 0.5s ease-in-out;
+}
+.cta-button:hover {
+  transform: scale(1.05);
 }
 
 /*
@@ -90,7 +126,7 @@
 
 .bottom {
   height: 250px;
-  background-color: #70d026;
+  background-color: #fafafa;
 }
 .bottom-text {
   font-size: 22px;

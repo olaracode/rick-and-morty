@@ -1,23 +1,9 @@
 import React, { useState } from "react";
-import { useQuery, gql } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { CardCharacter } from "../../types";
 import CharacterCard from "./CharacterCard";
 import { RevolvingDot } from "react-loader-spinner";
-
-const GET_CHARACTER = (page: number) => gql`
-  query getCharacter {
-    characters (page: ${page}){
-      results {
-        name
-        image
-        id
-      },
-      info {
-        pages
-      }
-    }
-  }
-`;
+import { GET_CHARACTERS } from "../../Queries";
 
 /*
 
@@ -25,7 +11,7 @@ const GET_CHARACTER = (page: number) => gql`
 
 const AllCharacters = () => {
   let [currentPage, setCurrentPage] = useState<number>(1);
-  const { loading, error, data } = useQuery(GET_CHARACTER(currentPage));
+  const { loading, error, data } = useQuery(GET_CHARACTERS(currentPage));
   let smithFamily = [1, 2, 3, 4, 5, 6];
   return (
     <>

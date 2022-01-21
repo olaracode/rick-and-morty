@@ -3,19 +3,7 @@ import EpisodeCard from "./EpisodeCard";
 import { useQuery, gql } from "@apollo/client";
 import { EpisodeProps } from "../../types";
 import { RevolvingDot } from "react-loader-spinner";
-
-const GET_EPISODES = (page: number) => gql`
-  query getEpisodes {
-    episodes (page: ${page}){
-      results {
-        name, episode, id
-      },
-      info {
-        pages
-      }
-    }
-  }
-`;
+import { GET_EPISODES } from "../../Queries";
 
 const AllEpisodes = () => {
   let [currentPage, setCurrentPage] = useState<number>(1);
@@ -31,7 +19,11 @@ const AllEpisodes = () => {
         <>
           {data.episodes.results.map((episode: EpisodeProps) => {
             return (
-              <EpisodeCard name={episode.name} episode={episode.episode} />
+              <EpisodeCard
+                name={episode.name}
+                episode={episode.episode}
+                id={episode.id}
+              />
             );
           })}
           <div className="py-5 d-flex justify-content-center">

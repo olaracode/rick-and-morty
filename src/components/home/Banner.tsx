@@ -14,7 +14,11 @@ const Banner = () => {
           de moleculas que se desplazan dondequiera que el universo te lleve
         </p>
         <p className="text-end p-5">- Rick Sanchez</p>
-        <button className="cta-button w-75 text-white">Explora su mundo</button>
+        <a href="#explore">
+          <button className="cta-button w-75 text-white">
+            Explora su mundo
+          </button>
+        </a>
       </div>
     </div>
   );

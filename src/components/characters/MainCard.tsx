@@ -2,28 +2,19 @@ import React, { useState, useEffect } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { Characters, MainCardProps } from "../../types";
 import Character from "../../views/Character";
-const GET_CHARACTER = (id: number) => gql`
-    query getCharacter {
-        character(id: ${id}){
-            id,
-            name,
-            species,
-            image,
-            origin{
-                name
-            },
-            location{
-                name
-            },
-            status
-        }
-    }
-`;
+import { useNavigate } from "react-router-dom";
+import { GET_CHARACTER } from "../../Queries";
 
 const MainCard = ({ id }: MainCardProps) => {
   const { loading, error, data } = useQuery(GET_CHARACTER(id));
+  let navigate = useNavigate();
   return (
-    <div className="card main-card">
+    <div
+      className="card main-card"
+      onClick={() => {
+        navigate(`/character/${id}`, { replace: true });
+      }}
+    >
       {loading ? (
         <p>Loading</p>
       ) : (
