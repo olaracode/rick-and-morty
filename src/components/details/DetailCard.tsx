@@ -5,6 +5,7 @@ import EpisodeCard from "../episodes/EpisodeCard";
 import { EpisodeProps } from "../../types";
 import { GET_CHARACTER_DETAIL } from "../../Queries";
 import { RevolvingDot } from "react-loader-spinner";
+import SearchBar from "../SearchBar";
 const DetailCard = () => {
   let params = useParams();
   let id = params.id!;
@@ -44,6 +45,12 @@ const DetailCard = () => {
             </div>
           </>
         )}
+      </div>
+      <div className="py-5 mx-auto">
+        <p className="my-3 mx-auto text-center">
+          Busca a tu personaje favorito
+        </p>
+        <SearchBar />
       </div>
       {loading ? (
         <div className="d-flex align-items-center justify-content-center py-5">
