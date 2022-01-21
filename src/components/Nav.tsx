@@ -6,7 +6,7 @@ const DesktopNav = ({ location, navigate }: AppsProps) => (
   <div
     className="w-100 d-flex justify-content-between p-0 position-absolute"
     style={
-      location === "/"
+      location === "/rick-and-morty"
         ? { color: "white" }
         : { color: "black", backgroundColor: "#fafafa" }
     }
