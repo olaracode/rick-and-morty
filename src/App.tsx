@@ -29,12 +29,15 @@ function App() {
         <Router>
           <Nav />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/characters" element={<Character />} />
-            <Route path="/episodes" element={<Episodes />} />
-            <Route path="/episode/:id" element={<EpisodeDetail />} />
-            <Route path="/character/:id" element={<Details />} />
-            <Route path="/search/:input" element={<Search />} />
+            <Route path="/rick-and-morty/" element={<Home />} />
+            <Route path="/rick-and-morty/characters" element={<Character />} />
+            <Route path="/rick-and-morty/episodes" element={<Episodes />} />
+            <Route
+              path="/rick-and-morty/episode/:id"
+              element={<EpisodeDetail />}
+            />
+            <Route path="/rick-and-morty/character/:id" element={<Details />} />
+            <Route path="/rick-and-morty/search/:input" element={<Search />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
