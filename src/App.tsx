@@ -30,7 +30,7 @@ function App() {
         <Router basename={basename}>
           <Nav />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="" element={<Home />} />
             <Route path="/characters" element={<Character />} />
             <Route path="/episodes" element={<Episodes />} />
             <Route path="/episode/:id" element={<EpisodeDetail />} />
